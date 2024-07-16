@@ -12,7 +12,7 @@ namespace WhoIsElder
             Player p4 = new Player(103, "Kartik", 24);
             Player p5 = new Player(104, "Shubham", 34);
 
-            Player[] players = new Player[] {p1, p2,p3, p4, p5};
+            Player[] players = {p1, p2,p3, p4, p5};
             
 
             Console.WriteLine("The eldest Player is: ");
