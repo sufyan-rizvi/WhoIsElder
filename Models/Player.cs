@@ -8,7 +8,7 @@ namespace WhoIsElder.Models
 {
     internal class Player
     {
-        static int MIN_AGE = 18;
+        static int DEFAULT_AGE = 18;
         public int Id { get; }
         public string Name { get; }
         public int Age { get;}
@@ -17,7 +17,7 @@ namespace WhoIsElder.Models
         {
             Id = id;
             Name = name; 
-            Age = MIN_AGE;
+            Age = DEFAULT_AGE;
         }
 
         public Player (int id, string name, int age): this(id, name)
@@ -28,7 +28,7 @@ namespace WhoIsElder.Models
         public static Player WhoIsElder(Player[] player)
         {
             Player eldestPLayer = null;
-            int highestAge = MIN_AGE;
+            int highestAge = DEFAULT_AGE;
 
             foreach (Player currentPlayer in player)
             {
